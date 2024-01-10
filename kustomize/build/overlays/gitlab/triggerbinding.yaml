@@ -1,0 +1,16 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: TriggerBinding
+metadata:
+  name: health-999-trigger-binding
+spec:
+  params:
+    - name: git-app-rev
+      value: $(body.head_commit.id)
+    - name: git-app-url
+      value: 'https://github.com/skitamura-org/health-999-app'
+    - name: git-manifests-url
+      value: 'https://github.com/skitamura-org/health-999-manifest'
+    - name: git-user
+      value: $(body.user_username) 
+    - name: git-email
+      value: $(body.user_email) 
