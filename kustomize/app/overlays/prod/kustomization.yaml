@@ -7,6 +7,6 @@ resources:
 namespace: health-999-production
 
 images:
-- digest: sha256:085b9d73976428c1f6c2966fd6292306a6d2c60e1f6a5648fcc7b303f937f076
+- digest: sha256:588db84a083746453972264733ff5f9f16cd9663595fb421115e251b3baded02
   name: ___IMAGE_URL___@___IMAGE_DIGEST___
   newName: image-registry.openshift-image-registry.svc:5000/health-999-develop/health-999-record
